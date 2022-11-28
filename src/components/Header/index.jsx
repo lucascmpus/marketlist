@@ -24,7 +24,9 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <h2>marketlist</h2>
+        <Link href='/'>
+          <h2>marketList</h2>
+        </Link>
         <ul>
           {links.map(({ name, path }) => (
             <li key={path}>
@@ -36,6 +38,7 @@ export default function Header() {
             </li>
           ))}
         </ul>
+        <p>perfil</p>
       </nav>
     </header>
   );
